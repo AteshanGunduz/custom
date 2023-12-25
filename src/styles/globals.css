@@ -1,0 +1,285 @@
+.bigbox{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  letter-spacing: 0.2rem;
+}
+
+h3{
+  font-size: 1.1rem;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+h1{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 1rem;
+  color: #555555;
+}
+
+
+
+button{
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin: 1rem;
+}
+
+button:hover{
+  scale: 1.04; 
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.toggled-bg{
+  opacity: 0.5;
+}
+
+.quote-container{
+  width: 80%;
+  margin: 2rem 0;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 4rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: relative;
+  
+}
+
+.basket-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.basket-container h3{
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color:#FA7070;
+  padding: 0.8rem 1rem;
+  
+}
+
+.basket{
+  padding: 1rem;
+  background: #FA7070;
+  color: aliceblue;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.basket-page{
+  position: fixed;
+  top:0;
+  right:0;
+  padding: 1.4rem;
+  max-height: 90vh;
+  width: 30rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.back-shopping{
+  padding: 1rem;
+  background: #FA7070;
+  color: aliceblue;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  font-weight: 700
+}
+
+.confirm-container{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.confirm-purchase{
+  padding: 1rem;
+  background: #3F72AF;
+  color: aliceblue;
+  border-radius: 1rem;
+  font-weight: 700
+}
+
+.sss{
+  margin-top: -1rem;
+}
+
+.purchase-products{
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.product-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container{
+  padding-bottom: 1rem;
+}
+
+
+.products{
+  width: 20rem;
+  height: 31rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.buy{
+position: absolute;
+bottom: 0;
+left: 6.3rem;
+background: #FA7070;
+padding: 0.7rem 1.2rem;
+border-radius: 1rem;
+font-size: 1rem;
+color: aliceblue;
+font-weight: 600;
+}
+
+.buy:hover{
+background-color: aliceblue;
+color:#FA7070
+}
+
+.filter{
+  display: flex;
+}
+
+.filter-options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  
+}
+
+.filter-options button{
+  margin: 0.2rem;
+}
+
+
+.slider{
+  display: flex;
+  justify-content: center;
+}
+
+/* Sliding effect part */
+
+
+.imgContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s forwards;
+}
+
+.slide-right {
+  animation: slideRight 0.5s forwards;
+}
+
+/* @keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+ */
+
+
+@media(max-width: 600px){
+  .products{
+    width: 12rem;
+    height: 28rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  .products img{
+   width: 120px;
+  }
+
+  .buy{
+    left: 2rem
+    }
+
+    .basket-container{
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      width: 95%;
+    }
+    
+
+    .basket-page{
+      width: 20rem;
+      padding: 1.7rem;
+    }
+
+    .basket-page img{
+      width: 100px;
+      height: 140px;
+      margin: auto 0;
+      
+    }
+
+    .sss{
+      margin-top: -1rem;
+      padding: 1rem;
+      
+    }
+
+   
+}
